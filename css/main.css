@@ -360,6 +360,7 @@ div.portfolio .container .swiper-slide a{
     margin:0 50px;
 }
 div.portfolio .container .swiper-slide div.row{
+    position: relative;
     justify-content:center;
 }
 div.portfolio .container .swiper-slide div.row .img-box{
@@ -512,7 +513,9 @@ div.portfolio .container .view-more a.btn:hover{
         --paragraph_font:.8rem !important;
         --icon_size:1rem !important;
     }
-    
+    div.portfolio .container .swiper-slide div.row .content-item h3{
+        font-size: calc(var(--h3_font) - .4rem) !important;
+    }
 }
 @media (min-width:326px) and (max-width: 400px){
     :root{
@@ -522,6 +525,9 @@ div.portfolio .container .view-more a.btn:hover{
         --nav_brand:.9rem !important;
         --paragraph_font:.9rem !important;
         --icon_size:1.1rem;
+    }
+    div.portfolio .container .swiper-slide div.row .content-item h3{
+        font-size: calc(var(--h3_font) - .2rem) !important;
     }
 }
 @media (max-width: 400px){
@@ -545,6 +551,7 @@ div.portfolio .container .view-more a.btn:hover{
     div.portfolio .container .swiper-container{
         height:200px;
     }
+    
     footer .container header hr{
         width:75% !important;
     }
@@ -579,9 +586,30 @@ div.portfolio .container .view-more a.btn:hover{
     div.skills .container .skill-item .skills-box .circular p{
         font-size: calc(var(--paragraph_font) - .16rem);
     }
+    div.portfolio .container .swiper-slide div.row{
+        overflow: hidden;
+    }
     div.portfolio .container .swiper-slide div.row .content-item{
+        position: absolute;
+        transition:all .3s ease-in-out;
+        bottom: -40px;
+        opacity:0;
+    }
+    div.portfolio .container .swiper-slide div.row:hover .content-item{
+        bottom: 0;
+        opacity:1;
+    }
+    div.portfolio .container .swiper-slide div.row .content-item h3{
+        font-size: var(--h3_font);
+        background: #f57f72d9;
+        color: #fff;
+        margin: 0;
+        padding: 4px;
+    }
+    div.portfolio .container .swiper-slide div.row .content-item p{
         display:none;
     }
+
     footer .container div.row > div{
         margin-bottom:20px;
     }
