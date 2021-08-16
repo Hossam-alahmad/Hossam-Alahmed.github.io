@@ -1,0 +1,55 @@
+:root{
+    --second_color:#201d2f;
+    --footer_color:#28283f;
+    --font_color:#e8e8e8;
+    --border_color:#28283f;
+}
+
+body,
+nav.navbar,
+nav.navbar .container .sidebar,
+div.portfolio .container .swiper-slide
+{
+    transition:all .2s ease-in-out;
+    background-color:var(--second_color);
+}
+footer{
+    background-color:var(--footer_color);
+}
+body,
+nav.navbar .container div.menu-bar i,
+nav.navbar .container div.nav-brand a,
+nav.navbar .container div ul li a,
+div.portfolio .container .swiper-slide a,
+div.header-box .container .content a.btn, 
+div.portfolio .container .view-more a.btn,
+div.header-box .container .follow-me ul li a:hover i
+footer .container header h2,
+footer .container header hr,
+footer .container div h6,
+footer .container div ul li,
+footer .container div ul li i,
+footer .container div p,
+.developed-by p{
+    color:var(--font_color);
+}
+nav.navbar .container div::nth-of-type(3) ul li:last-of-type i{
+    background-color:var(--font_color) !important;
+}
+.swiper-pagination-bullet{
+    background-color:var(--font_color);
+}
+div.skills .container .skill-item .title-box svg,
+div.services .container .service-item svg{
+    fill:var(--font_color);
+}
+
+.fixed-navbar{
+    box-shadow: 0 1px 3px 0 var(--border_color);
+}
+.developed-by{
+    background-color:var(--second_color);
+}
+nav.navbar .container .row div:nth-of-type(4) .box{
+    background-color:var(--main_color);
+}
