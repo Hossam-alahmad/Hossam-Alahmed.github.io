@@ -343,7 +343,7 @@ div.portfolio .container .swiper-slide {
 div.portfolio .container .swiper-slide img {
     display: block;
     width: 100%;
-    height: 100%;
+    height: 224px;
     object-fit: cover;
 }
 .swiper-container-horizontal>.swiper-pagination-bullets, .swiper-pagination-custom, .swiper-pagination-fraction{
@@ -365,6 +365,7 @@ div.portfolio .container .swiper-slide div.row{
 }
 div.portfolio .container .swiper-slide div.row .img-box{
     box-shadow: 0 0 5px #b3b3b3; 
+    max-height:220px;
 }
 div.portfolio .container .swiper-slide div.row .content-item{
     text-align:left;
@@ -373,7 +374,6 @@ div.portfolio .container .swiper-slide div.row .content-item h3{
     font-size:var(--h3_font);
 }
 div.portfolio .container .swiper-slide div.row .content-item p{
-    width:75%;
     font-size:var(--paragraph_font);
 }
 div.portfolio .container .view-more{
@@ -556,6 +556,11 @@ div.portfolio .container .view-more a.btn:hover{
         width:75% !important;
     }
 }
+@media (max-width:300px){
+    div.portfolio .container .swiper-slide img {
+        height:100% !important;
+    }
+}
 @media (max-width:576px){
     :root{
         --header_font:1.5rem;
@@ -594,6 +599,9 @@ div.portfolio .container .view-more a.btn:hover{
         transition:all .3s ease-in-out;
         bottom: -40px;
         opacity:0;
+    }
+    div.portfolio .container .swiper-slide img {
+        height:178px;
     }
     div.portfolio .container .swiper-slide div.row:hover .content-item{
         bottom: 0;
@@ -635,6 +643,7 @@ div.portfolio .container .view-more a.btn:hover{
     div.portfolio .container .swiper-container{
         height:280px;
     }
+   
 }
 @media (max-width:767px){
     nav.navbar .container div.row{
@@ -662,7 +671,7 @@ div.portfolio .container .view-more a.btn:hover{
     nav.navbar .container div:nth-of-type(3).show-menulist{
         visibility:visible;
         opacity:1;
-        top:61px;
+        top:55px;
     }
     nav.navbar .container div:nth-of-type(3).scroll-up{
         top:0 !important;
@@ -705,6 +714,9 @@ div.portfolio .container .view-more a.btn:hover{
     }
     footer .container header hr{
         width:50%;
+    }
+    div.portfolio .container .swiper-slide img {
+        height:150px;
     }
 }
 @media (min-width: 768px) and (max-width:991px){
