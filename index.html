@@ -288,6 +288,7 @@
                 </header>
                 <div class="swiper-container mySwiper">
                     <div class="swiper-wrapper">
+                        
                         <div class="swiper-slide">
                             <a href="#">
                                 <div class="row">
@@ -309,7 +310,24 @@
                                 </div>
                             </a>
                         </div>
-                            <div class="swiper-slide">
+                        <div class="swiper-slide">
+                            <a href="https://panda-creative-portfolio.netlify.app/">
+                                <div class="row">
+                                    <div class="image-item col-12 col-md-5 col-lg-5">
+                                        <div class="img-box">
+                                            <img class="img-responsive" src="images/Figure4.png" alt="Figure4">
+                                        </div>
+                                    </div>
+                                    <div class="content-item col-12 col-md-6 col-lg-6">
+                                        <h3>Panda:Creative Portfolio</h3>
+                                        <p>
+                                            panda is responsive portfolio and very easy to use for your business, its come with amazing color and simple design Ui/Ux
+                                        </p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
                             <a href="http://yourcv.eelanaty.com" target="_blank">
                                 <div class="row">
                                     <div class="image-item col-12 col-md-5 col-lg-5">
@@ -419,10 +437,7 @@
             var swiper = new Swiper(".mySwiper", {
                 spaceBetween: 30,
                 centeredSlides: true,
-                autoplay: {
-                delay: 4000,
-                disableOnInteraction: false,
-                },
+                autoplay:false,
                 pagination: {
                 el: ".swiper-pagination",
                 clickable: true,
@@ -441,7 +456,7 @@
                     $(".chart").easyPieChart({
                         lineWidth:5,//your options goes here
                         barColor:'#f57f72',
-                    
+                        
                     });
                 });
             });
